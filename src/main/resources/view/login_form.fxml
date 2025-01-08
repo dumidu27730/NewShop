@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Line endX="-7.0" endY="151.0" layoutX="443.0" layoutY="142.0" startX="-7.0" startY="-60.0" />
+      <Pane prefHeight="55.0" prefWidth="605.0" style="-fx-background-color: #a4b0be;">
+         <children>
+            <Label layoutX="195.0" prefHeight="17.0" prefWidth="210.0" text="Login Form" textFill="#2f3542">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="-7.0" endY="151.0" layoutX="145.0" layoutY="142.0" startX="-7.0" startY="-60.0" />
+      <PasswordField fx:id="txtPassword" layoutX="228.0" layoutY="188.0" promptText="Password" />
+      <JFXButton layoutX="337.0" layoutY="318.0" onAction="#btnSignupOnAction" text="Signup" />
+      <Text layoutX="195.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account ?" wrappingWidth="125.0" />
+      <JFXButton layoutX="268.0" layoutY="245.0" onAction="#btnLoginOnAction" text="Login" />
+      <JFXButton layoutX="195.0" layoutY="281.0" onAction="#btnForgotPasswordOnAction" prefHeight="25.0" prefWidth="114.0" text="forgot password" />
+      <TextField fx:id="txtEmail" layoutX="228.0" layoutY="146.0" promptText="Email" />
+   </children>
+</AnchorPane>

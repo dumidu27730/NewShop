@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.CustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6ab04c" height="507.0" layoutX="-6.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="731.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2e36" height="60.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="731.0" />
+      <Label layoutX="270.0" layoutY="12.0" prefHeight="36.0" prefWidth="210.0" text="Customer Form" textFill="#e1a720">
+         <font>
+            <Font name="Corbel Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="57.0" layoutY="126.0" promptText="ID" />
+      <JFXTextField fx:id="txtName" layoutX="217.0" layoutY="126.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="385.0" layoutY="126.0" promptText="Address" />
+      <JFXTextField fx:id="txtSalary" layoutX="548.0" layoutY="126.0" promptText="Salary" />
+      <JFXButton layoutX="285.0" layoutY="182.0" onAction="#btnAddOnAction" text="Add">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="359.0" layoutY="182.0" onAction="#btnUpdateOnAction" text="Update">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="465.0" layoutY="182.0" onAction="#btnDeleteOnAction" text="Delete">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="564.0" layoutY="182.0" onAction="#btnSearchOnAction" text="Search">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCustomers" layoutX="76.0" layoutY="255.0" prefHeight="200.0" prefWidth="598.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="105.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="166.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="144.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="182.0" text="Salary" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6ab04c" height="507.0" layoutX="-26.0" layoutY="-12.0" stroke="BLACK" strokeType="INSIDE" width="731.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2e36" height="60.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="177.0" />
+      <Label layoutX="20.0" layoutY="12.0" prefHeight="36.0" prefWidth="154.0" text="Dash Form" textFill="#e1a720">
+         <font>
+            <Font name="Corbel Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="434.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="177.0" />
+      <JFXButton layoutX="49.0" layoutY="185.0" onAction="#btnItemFormOnAction" text="Item Form " />
+      <AnchorPane fx:id="loadFormContent" layoutX="177.0" layoutY="-3.0" prefHeight="495.0" prefWidth="715.0" style="-fx-background-color: black;" />
+      <JFXButton layoutX="47.0" layoutY="248.0" onAction="#btnOrderFormOnAction" text="Order Form" />
+      <JFXButton layoutX="40.0" layoutY="121.0" onAction="#btnCustomerFormOnAction" text="Customer Form" />
+      <JFXButton layoutX="63.0" layoutY="82.0" onAction="#btnOrderFormOnAction" text="Login" />
+   </children>
+</AnchorPane>

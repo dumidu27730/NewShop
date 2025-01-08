@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A3CB38;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupFormController">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="67.0" prefWidth="605.0" style="-fx-background-color: #a4b0be;">
+         <children>
+            <Label layoutX="180.0" layoutY="6.0" prefHeight="56.0" prefWidth="258.0" text="Register Form" textFill="#2f3542">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="147.0" layoutY="84.0" prefHeight="281.0" prefWidth="304.0" style="-fx-background-color: #009432;">
+         <children>
+            <TextField fx:id="txtUserName" layoutX="78.0" layoutY="20.0" promptText="Username" />
+            <TextField fx:id="txtEmail" layoutX="78.0" layoutY="67.0" promptText="Email" />
+            <PasswordField fx:id="txtPassword" layoutX="78.0" layoutY="111.0" promptText="Password" />
+            <PasswordField fx:id="txtPassword1" layoutX="78.0" layoutY="157.0" promptText="Confirm Pasword" />
+            <JFXButton layoutX="129.0" layoutY="228.0" onAction="#btnLoginOnAction" style="-fx-background-color: #EA2027;" text="Register" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
