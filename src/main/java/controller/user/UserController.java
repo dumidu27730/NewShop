@@ -3,12 +3,16 @@ package controller.user;
 
 import db.DBConnection;
 import model.User;
+import org.jasypt.util.text.BasicTextEncryptor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class UserController implements UserService {
+
+
+
 
     private static UserController instance;
     private UserController(){}
@@ -21,6 +25,12 @@ public class UserController implements UserService {
 
     @Override
     public boolean addUser(User user) {
+
+        String key ="12345";
+
+        BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
+        basicTextEncryptor.setPassword(key);
+
         String SQl = "INSERT INTO users (username, email, Password) VALUES (?,?,?)";
         try {
             Connection connection = DBConnection.getInstance().getConnection();

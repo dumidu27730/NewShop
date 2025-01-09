@@ -52,7 +52,7 @@ public class LoginFormController {
             );
             System.out.println(user);
             if (user != null) {
-                if (basicTextEncryptor.encrypt(user.getPassword()).equals(txtPassword.getText())) {
+                if (basicTextEncryptor.decrypt(user.getPassword()).equals(txtPassword.getText())) {
                     System.out.println("Login!");
                     Stage stage = new Stage();
                     stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/dash_form.fxml"))));

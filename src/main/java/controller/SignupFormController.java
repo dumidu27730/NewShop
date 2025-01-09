@@ -31,26 +31,6 @@ public class SignupFormController {
     UserService service = UserController.getInstance();
 
 
-    public static void main(String[] args) {
-
-        String Key="1234";
-
-        BasicTextEncryptor basicTextEncryptor= new BasicTextEncryptor();
-        basicTextEncryptor.setPassword(Key);
-
-        String password="Senura123";
-
-        String encrypt = basicTextEncryptor.encrypt(password);
-
-        System.out.println("encrypt password :"+encrypt);
-
-        String decrypt = basicTextEncryptor.decrypt(encrypt);
-        System.out.println("decrypt password :"+decrypt);
-
- }
-
-    DesCbcCrcEType basicTextEncryptor;
-
     @FXML
     void btnLoginOnAction(ActionEvent event) throws SQLException {
         if (txtPassword.getText().equals(txtPassword.getText())){
